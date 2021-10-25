@@ -1,5 +1,5 @@
-# neovim-config
-# plugin config for new-vim editor
+# Neovim Config
+## plugin config for new-vim editor
 
 ## Steps:
 1. sudo apt install neovim (for linux)
