@@ -14,4 +14,7 @@
 4. :PlugUpdate
 5. :so %
 
+## Final result:
+![Final_result_neovim_plugin_setup](https://i.ibb.co/D4jhrgm/neo-vim-forgit.png)
+
 ## Where you also can learn these: https://github.com/junegunn/vim-plug
