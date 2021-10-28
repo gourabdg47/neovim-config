@@ -8,6 +8,17 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+    Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
+    " Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}  " Auto Completion
+    Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+    Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
+    Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+    Plug 'vim-python/python-syntax' " Python highlighting
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Highlight nerdtree
+    Plug 'gmarik/Vundle.vim' " Vundle
+    Plug 'itchyny/lightline.vim' " Lightline statusbar
+
 
     Plug 'morhetz/gruvbox'
     Plug 'preservim/nerdcommenter'
@@ -32,4 +43,3 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 call plug#end()
-
