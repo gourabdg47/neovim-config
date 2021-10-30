@@ -1,4 +1,4 @@
-source C:\Users\goura\AppData\Local\nvim\vim-plug\plugins.vim
+source vim-plug/plugins.vim
 
 " tabs display as four spaces
 set tabstop=4
@@ -167,15 +167,14 @@ let g:closetag_close_shortcut = '<leader>>'
 """"""""""""""""""""""""""""""
 
 
-
 " CTRL-C to copy (visual mode)
-"vmap <C-c> y
-" CTRL-X to cut (visual mode)
-"vmap <C-x> x
-" CTRL-V to paste (insert mode)
-"imap <C-v> <esc>P
+"vnoremap <C-c> "*y
 
-" CTRL-Z to undo
-"imap <C-z> <esc>u
-vmap <C-z> u
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+"CTRL-Z to undo
+"vmap <C-z> "+u
 
