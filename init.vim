@@ -5,7 +5,7 @@ set tabstop=4
 " syntex highlight
 syntax enable
 " show line number
-set number relativenumber
+set number "relativenumber
 " text should start to wrap at 80 chars
 set textwidth=80
 
@@ -55,7 +55,7 @@ let g:airline_symbols.linenr = ''
 
 let g:python_highlight_all = 1
 
-set clipboard=unnamedplus       " Copy/paste between vim and other programs.
+"set clipboard=unnamedplus       " Copy/paste between vim and other programs.
 
 " Always show statusline
 set laststatus=2
@@ -93,4 +93,89 @@ highlight String           guifg=#3071db ctermfg=12   guibg=none    ctermbg=none
 highlight Number           guifg=#ff6c6b ctermfg=1    guibg=none    ctermbg=none  cterm=none
 highlight Function         guifg=#ff6c6b ctermfg=1    guibg=none    ctermbg=none  cterm=none
 "highlight Visual           guifg=#dfdfdf ctermfg=1    guibg=#1c1f24 ctermbg=none  cterm=none
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set path+=**					" Searches current directory recursively.
+set wildmenu					" Display all matches when tab complete.
+set incsearch                   " Incremental search
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vifm
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>vv :Vifm<CR>
+map <Leader>vs :VsplitVifm<CR>
+map <Leader>sp :SplitVifm<CR>
+map <Leader>dv :DiffVifm<CR>
+map <Leader>tv :TabVifm<CR>
+
+" Html auto tag close settings """"""""""""""""""""""
+
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
+
+" Use these commands to toggle enable/disable this function for current buffer:
+
+" :CloseTagToggleBuffer
+" :CloseTagEnableBuffer
+" :CloseTagDisableBuffer
+
+" set CloseTagEnableBuffer
+
+""""""""""""""""""""""""""""""
+
+
+
+" CTRL-C to copy (visual mode)
+"vmap <C-c> y
+" CTRL-X to cut (visual mode)
+"vmap <C-x> x
+" CTRL-V to paste (insert mode)
+"imap <C-v> <esc>P
+
+" CTRL-Z to undo
+"imap <C-z> <esc>u
+vmap <C-z> u
 
