@@ -18,14 +18,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Highlight nerdtree
     Plug 'gmarik/Vundle.vim' " Vundle
     Plug 'itchyny/lightline.vim' " Lightline statusbar
-
+    Plug 'alvan/vim-closetag' " Html tag completion
 
     Plug 'morhetz/gruvbox'
     Plug 'preservim/nerdcommenter'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'sirver/ultisnips'
+   " Plug 'sirver/ultisnips'
 
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
@@ -43,3 +43,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 call plug#end()
+
