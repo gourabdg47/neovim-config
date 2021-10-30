@@ -14,6 +14,6 @@
 5. :so %
 
 ## Final result:
-![Final_result_neovim_plugin_setup](https://i.ibb.co/D4jhrgm/neo-vim-forgit.png)
+![Final_result_neovim_plugin_setup]https://media.discordapp.net/attachments/872158344536805416/903762385129578506/unknown.png?width=1255&height=671)
 
 ## Where I learnt these: https://github.com/junegunn/vim-plug
