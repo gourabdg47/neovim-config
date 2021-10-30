@@ -14,6 +14,6 @@
 5. :so %
 
 ## Final result:
-![Final_result_neovim_plugin_setup]https://i.ibb.co/Pc0Y8dK/FinalVim.png)
+![Final_result_neovim_plugin_setup](https://i.ibb.co/Pc0Y8dK/FinalVim.png)
 
 ## Where I learnt these: https://github.com/junegunn/vim-plug
